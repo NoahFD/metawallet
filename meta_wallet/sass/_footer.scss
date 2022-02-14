@@ -1,0 +1,115 @@
+.footer {
+  grid-column: center-start/center-end;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  &__logo {
+    height: 20%;
+    display: block;
+    grid-column: 1 / auto;
+    justify-self: center;
+  }
+  &__row {
+    grid-column: 1/-1;
+
+    &--1 {
+      display: grid;
+      align-items: center;
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+      row-gap: 10%;
+    }
+  }
+  &__lists--box {
+    grid-column: auto/auto;
+  }
+
+  &__lists {
+    list-style: none;
+    display: flex;
+    gap: 10%;
+    font-size: 1.6rem;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+  }
+  &-link:link,
+  &-link:visited {
+    z-index: 100;
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #767676;
+    transition: all 0.3s;
+  }
+
+  &-link:hover,
+  &-link:active {
+    z-index: 100;
+    color: #555;
+  }
+  &__social-links--box {
+    grid-column: auto/-1;
+  }
+
+  &__social-links {
+    list-style: none;
+    display: flex;
+    gap: 10%;
+    font-size: 1.6rem;
+    justify-content: center;
+  }
+
+  .social-icon {
+    height: 2.4rem;
+    width: 2.4rem;
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+  }
+
+  &__cta {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .label--title {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .label--emailbox {
+    display: flex;
+  }
+  .label--email {
+    font-size: 1.8rem;
+    outline: none;
+    border: none;
+    background-color: rgba($color-grey-light-1, 0.5);
+    padding: 1.5rem;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    color: #fff;
+    margin-right: 0;
+  }
+
+  &__cta-btn,
+  &__cta-btn:link,
+  &__cta-btn:visited {
+    border: none;
+    padding: 1.5rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    background-color: $color-primary;
+    color: $color-grey-light-2;
+    font-size: 1.8rem;
+    z-index: 10;
+    transition: all 0.3s;
+    cursor: pointer;
+    font-weight: 600;
+    margin-left: -2.5px;
+  }
+}

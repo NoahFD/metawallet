@@ -1,0 +1,31 @@
+.cta {
+  grid-column: full-start/full-end;
+  background-color: $color-primary-light-1;
+  display: grid;
+  grid-template-columns: minmax(6rem, 1fr) repeat(auto-fit, minmax(25rem, 1fr)) minmax(
+      6rem,
+      1fr
+    );
+  align-items: center;
+  z-index: 0;
+  margin-top: 8rem;
+  padding: 3rem 0;
+  &__text {
+    grid-column: 2 / auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+  }
+  &__img--box {
+    grid-column: auto/-2;
+    display: flex;
+    width: 100%;
+  }
+  &__img {
+    width: 150%;
+    overflow: hidden;
+  }
+}

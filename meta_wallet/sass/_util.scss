@@ -1,0 +1,48 @@
+.mb-sm {
+  margin-bottom: 2rem;
+}
+.mb-md {
+  margin-bottom: 3rem;
+}
+.mb-lg {
+  margin-bottom: 4rem;
+}
+.mb-hg {
+  margin-bottom: 8rem;
+}
+
+// line bottom
+.lb {
+  content: "";
+  border-bottom: 1px solid rgba($color-primary-light-1, 0.5);
+}
+
+//text-align center
+
+.text-align-center {
+  text-align: center;
+}
+
+// wave spacer
+.spacer {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  grid-column: full-start/full-end;
+}
+
+.layer0 {
+  aspect-ratio: 960/50;
+  background-image: url("../img/layer_waves_0.svg");
+}
+
+.layer1 {
+  aspect-ratio: 960/300;
+  background-image: url("../img/layer_waves_1.svg");
+}
+
+.layer2 {
+  aspect-ratio: 960/50;
+  background-image: url("../img/layer_waves_2.svg");
+}

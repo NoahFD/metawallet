@@ -1,0 +1,45 @@
+.button {
+  text-decoration: none;
+  padding: 1.8rem 4rem;
+  font-size: 1.6rem;
+  border-radius: 1.5rem;
+  transition: all 0.3s;
+  display: inline-block;
+  &--main:link,
+  &--main:visited {
+    background-color: $color-primary-dark-1;
+    color: $color-primary-light-1;
+  }
+
+  &--main:hover,
+  &--main:active {
+    background-color: $color-primary;
+    color: $color-primary-dark-1;
+    transform: scale(1.1);
+  }
+
+  &--secondary:link,
+  &--secondary:visited {
+    color: $color-primary;
+    outline: 1px solid $color-primary;
+  }
+
+  &--secondary:hover,
+  &--secondary:active {
+    color: $color-primary-light-1;
+    outline: 1px solid $color-primary-light-1;
+  }
+
+  &--more:link,
+  &--more:visited {
+    text-decoration: none;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    color: $color-primary-dark-1;
+  }
+
+  &--more:hover,
+  &--more:active {
+  }
+}
